@@ -136,11 +136,21 @@ body {
 
 .skill-content {
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    flex: 1;
+    justify-content: space-between;
+    min-height: 400px;
+}
+
+.skill-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     gap: 20px;
+}
+
+.skill-col h3 {
+    font-size: 50px;
+    margin-bottom: 20px;
 }
 
 .skill-block {
@@ -151,12 +161,12 @@ body {
     font-size: 30px;
     border-radius: 30px;
     font-weight: 600;
-    transition: background-color 0.3s color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
     user-select: none;
 }
 
 .skill-block:hover {
-    background-color: lightcoral;
+    background-color: lightblue;
 }
 
 /* -------------- courses --------------- */
